@@ -59,7 +59,7 @@ public class HTTPAnnotationController {
     @GetMapping("get/paramNoAnnotation")
     public String getParamNoAnnotation(String page) {
         log.info("params {}", page);
-        return "queryParamNoAnnotation";
+        return "queryParamNoAnnotation" + page;
     }
 
     @PostMapping("post/paramNoAnnotation")
@@ -98,7 +98,7 @@ public class HTTPAnnotationController {
     @PostMapping("post/formModel")
     public String postFORMModel(@RequestBody PagePostRequest formRequest) {
         log.info("request {}, name {}", formRequest, formRequest.getName());
-        return "hello";
+        return "⚠请求会报异常";
     }
 
     @GetMapping("get/requestHeader")
