@@ -2,7 +2,7 @@ package com.fanthus.test;
 
 import com.fanthus.springpractice.controller.HTTPAnnotationController;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 @Slf4j
 public class HTTPAnnotationTest {

@@ -1,13 +1,12 @@
 package com.fanthus.springpractice;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.Collections;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication()
+@EnableFeignClients(basePackages = {"com.fanthus.springpractice"})
 @Slf4j
 public class Application {
     public static void main(String[] args) {
@@ -16,4 +15,5 @@ public class Application {
 //        app.setDefaultProperties(Collections.singletonMap("server.port", "8083"));
         app.run(args);
     }
+
 }
