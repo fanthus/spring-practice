@@ -5,17 +5,14 @@ import com.fanthus.springpractice.model.request.PagePostRequest;
 import com.fanthus.springpractice.model.request.ValidRequest;
 import com.fanthus.springpractice.model.response.PersonResponse;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Controller;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.*;
 
 @Slf4j
-
 @RestController
-public class HTTPController {
+public class HTTPAnnotationController {
 
     @RequestMapping(method = RequestMethod.GET, path = {"requestMapping/get", "requestMapping/get2"} , params = {"id=1"}, headers = "Content-Type=application/json")
     public String reqestMapping() {
