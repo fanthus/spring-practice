@@ -4,6 +4,7 @@ import com.fanthus.springpractice.controller.HTTPAnnotationController;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
+
 @Slf4j
 public class HTTPAnnotationTest {
 
@@ -13,5 +14,7 @@ public class HTTPAnnotationTest {
         String value = controller.getParamNoAnnotation("22");
         log.info("value {}", value);
     }
+
+
 }
 
